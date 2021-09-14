@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+        <!---->
+        <!--ICons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--JS file-->
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="alert" id="alert">
+            <h3>Registered Succesfully</h3>
+            <button id="success">OK</button>
+        </div>
+        <header>
+            <h1>Online Dance Class</h1>
+            <p>Lace Your <span style="font-weight: bold;">Dancing</span> Shoes</p>
+            <h2>31/10/2021</h2>
+        </header>
+        <div class="flex-container outerdiv">
+            <div class="imagediv" >
+                <img src="./assets/dance.png" height="100%" width="100%">
+            </div>
+            <div class="formdiv" >
+                <div class="header">
+                    <h2>Registration</h2>
+                    <hr align="left"/>
+                </div>
+                <form name="regForm" id="regForm">
+                    <div class="namediv">
+                        <div>
+                            <label>First Name: </label><br>
+                            <input type="text" id="fname" name="fname" placeholder="First name"/>
+                        </div>
+                        <div>
+                            <label>Last Name: </label><br>
+                            <input type="text" id="lname" name="lname" placeholder="Last name"/>
+                        </div>
+                    </div>
+                    
+                    <div class="contactdiv">
+                        <div>
+                            <label>Email: </label><br>
+                            <input type="text" id="email" name="email" placeholder="xyz@abc.com"/>
+                        </div>
+                        <div>
+                            <label>Phone: </label><br>
+                            <input type="text" id="phone" name="phone" placeholder="+91 xxxxxxxxxx"/>
+                        </div>    
+                    </div>
+                    <div class="errDiv">
+                        <div>
+                            <span class="emailErr" id="emailErr"></span>
+                        </div>
+                        <div>
+                            <span class="phoneErr" id="phoneErr"></span>
+                        </div>
+                    </div>
+
+                    <div class="birthdiv">
+                        <div>
+                            <label>Date of birth: </label>
+                        </div>
+                        <div>
+                            <input type="date" id="dob" name="dob" placeholder="Date of birth"/>
+                        </div>
+                    </div>
+
+                    <div class="genderdiv">
+                        <div>
+                            <label>Gender: </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender" name="gender" value="Male"/>
+                            <label>Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender" name="gender" value="Female"/>
+                            <label>Female</label>
+                        </div> 
+                    </div>
+
+                    <div class="submitdiv">
+                        <input type="submit" name="submit" value="Register"/>
+                    </div>
+                </form>
+                <div id="errDiv"></div>
+            </div>
+        </div>
+        <footer>
+            <h2>Contact Us</h2>
+            <div class="flex-container2">
+                <div>
+                    <span class="material-icons">
+                        call
+                     </span>
+                    <span>+91 91991xxxxx</span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        email
+                    </span>
+                    <span>xyz@gmail.com</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

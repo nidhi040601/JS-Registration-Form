@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255,218,185); 
+}
+
+header h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+}
+
+header h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+header p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.outerdiv{
+    margin:30px auto;
+    background-color: #fff;
+    box-shadow: gray;
+    width: 80%;
+    box-shadow: 2px 2px 30px #ccc;
+    border-radius: 15px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+
+.flex-container > .imagediv{
+    width: 40%;
+}
+
+.imagediv img{
+    border-radius: 15px;
+}
+
+.flex-container > .formdiv{
+    padding: 25px;
+    width: 60%;
+}
+
+.header{
+    padding: 5px;
+}
+
+.header h2{
+    font-size: 30px;
+}
+
+.header hr{
+    border: 5px solid rgb(255,218,185); 
+    border-radius: 5px;
+    width: 15%;
+}
+
+.namediv{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.namediv > div{
+    width: 50%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.namediv label{
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.namediv input{
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(255,218,185); 
+    outline: none;
+}
+
+
+.contactdiv{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.contactdiv > div{
+    width: 50%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.contactdiv label{
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.contactdiv input{
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(255,218,185); 
+    outline: none;
+}
+
+.errDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5px;
+}
+
+.errDiv > div{
+    width: 50%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.emailErr,
+ .phoneErr{
+    width: 50%;
+    font-size: 15px;
+    color: red;
+    padding: 0px 8px;
+    border: none;
+    visibility: hidden;
+}   
+
+.birthdiv{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.birthdiv > div{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.birthdiv label{
+    font-size: 22px;
+}
+
+.birthdiv input{
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(255,218,185); 
+    outline: none;
+    cursor: pointer;
+}
+
+.genderdiv{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.genderdiv > div{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.genderdiv label{
+    font-size: 22px;
+}
+
+.genderdiv input{
+    cursor: pointer;
+}
+
+
+.submitdiv{
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.submitdiv input{
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background: rgb(255,218,185);
+    outline: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(255,218,185);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(255,218,185);
+}
+
+
+footer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+footer .flex-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .flex-container2 > div{
+    width: 10%;
+    margin-left: 30px;
+}
+
+#errDiv{
+    padding: 10px;
+    color: red;
+}
+
+.alert{
+    margin: auto;
+    padding: 20px 30px;
+    width: auto;
+    background-color:rgb(255,218,185);;
+    border-radius: 10px;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    left: 40%;
+    top: 40%;
+    cursor: pointer;  
+    box-shadow: 2px 2px 30px #ccc;
+    visibility: hidden;
+}
+
+.alert h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.alert button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 1px solid black;
+    background-color: rgba(14, 95, 14, 0.8);
+    border-radius:5px;
+    align-items: center;
+}
